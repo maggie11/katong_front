@@ -6,6 +6,7 @@ import { Button } from 'antd'
 import DB from '@DB'
 import '../base.css'
 import './Home.scss'
+import Tab from '@comp/Tab'
 
 // 异步加载页面的方式：
 const AsyncPage = DynamicImport(() =>
@@ -29,6 +30,7 @@ class Home extends React.Component {
 						<Link to="/async">下一页</Link>
 					</Button>
 					<Route path="/async" component={AsyncPage} />
+					<Tab />
 				</div>
 			</HashRouter>
 		)
